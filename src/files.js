@@ -1,10 +1,9 @@
-const prettier = `{
-	"arrowParens": "avoid",
-	"printWidth": 60,
-	"tabWidth": 4,
-	"useTabs": true,
-	"semi": false
-}
-`
+"use strict"
 
-export { prettier }
+import eslintrc from "./data/eslintrc.js"
+import prettierrc from "./data/prettierrc.js"
+import gitignore from "./data/gitignore.js"
+
+const files = { prettierrc, eslintrc, gitignore }
+
+export default files

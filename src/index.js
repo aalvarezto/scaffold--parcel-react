@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict"
 
-import fs from "fs"
-import { prettier } from "./files.js"
+import files from "./files.js"
+import createFiles from "./utils/createFiles.js"
 
-fs.writeFileSync("./.prettierrc", prettier)
+createFiles(files, ["prettierrc", "eslintrc", "gitignore"])

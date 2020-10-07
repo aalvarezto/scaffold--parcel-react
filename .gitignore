@@ -1,2 +1,8 @@
+.cache
+.DS_Store
+.env
 .vscode
-.node_modules
+build
+coverage/
+dist
+node_modules
