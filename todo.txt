@@ -1,0 +1,130 @@
+npm init -y
+
+crear el archivo ".prettierrc" con las "{}" llaves adentro
+
+npm install -D prettier
+
+"scripts": {
+  "dev": "parcel src/index.html",
+	"format": "prettier --write \"src/**/*.{js,jsx}\"",
+  "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+}, 
+"browserslist": ["last 2 Chrome versions"]
+
+
+---- ESLint ----
+
+npm install -D eslint eslint-config-prettier
+
+crear el archivo ".eslintrc.json" y pegar todo esto adentro =>
+
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "no-console": "warn"
+  },
+  "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
+
+.gitignore
+
+node_modules
+.cache/
+dist/
+.env
+.DS_Store
+coverage/
+.vscode/
+Instrucciones.txt
+
+---- Parcel ----
+
+npm install -D parcel-bundler
+npm install react react-dom
+
+npm install -D babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+npm install -D eslint-plugin-react-hooks
+npm install -D babel-eslint @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/preset-react
+
+---- Babel ----
+
+.babelrc 
+
+{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-env",
+    [
+      "@emotion/babel-preset-css-prop",
+      {
+        "sourceMap": false
+      }
+    ]
+  ],
+  "plugins": ["@babel/plugin-proposal-class-properties"]
+}
+
+
+
+npm install @reach/router
+npm install @emotion/core @emotion/babel-preset-css-prop
+
+
+---- TypeScript ----
+
+npm install -D typescript
+npx tsc --init
+npm install -D @types/react @types/react-dom @types/reach__router
+
+tsconfig.json
+
+"target": "ES2019",
+"jsx": "react",
+// "strict": true,
+
+---- TSLint ----
+
+// npm uninstall eslint babel-eslint eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+npm install -D tslint tslint-react tslint-config-prettier
+
+package.json
+"scripts": {"lint": "tslint --project"}
+
+tslint.json
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-console": false,
+    "jsx-no-lambda": false,
+    "member-ordering": false
+  }
+}
+

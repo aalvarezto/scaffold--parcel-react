@@ -1,3 +1,5 @@
+"use strict"
+
 const prettierrc = `{
 	"arrowParens": "avoid",
 	"printWidth": 60,
@@ -6,4 +8,5 @@ const prettierrc = `{
 	"semi": false
 }
 `
+
 export default prettierrc

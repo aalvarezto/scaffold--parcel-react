@@ -1,0 +1,15 @@
+yarn init -y
+yarn add -D parcel-bundler prettier eslint eslint-config-prettier babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks babel-eslint @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/preset-react 
+yarn add react react-dom
+
+yarn add @emotion/babel-preset-css-prop
+
+        "scripts": {
+                "format": "prettier \"src/**/*.{js,jsx,html}\" --write",
+                "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+                "start": "parcel index.html",
+                "build": "parcel build index.html --out-dir build/output"
+        }, 
+        "browserslist": [
+                "last 2 Chrome versions"
+        ]
