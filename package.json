@@ -1,25 +1,25 @@
 {
-  "type": "module",
-  "name": "scaffold--parcel-react",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/aalvarezto/scaffold--parcel-react.git"
-  },
-  "author": "Andres Alvarez <ndralvz@gmail.com>",
-  "license": "MIT",
-  "description": "DRY utility for parcel",
-  "bugs": {
-    "url": "https://github.com/aalvarezto/scaffold--parcel-react/issues"
-  },
-  "homepage": "https://github.com/aalvarezto/scaffold--parcel-react#readme",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prettierfile": "echo {\"arrowParens\":\"avoid\",\"printWidth\":60,\"tabWidth\":4,\"useTabs\":true,\"semi\":false} > .prettierrc"
-  },
-  "keywords": [],
-  "devDependencies": {
-    "prettier": "^2.1.2"
-  }
+	"type": "module",
+	"name": "scaffold--parcel-react",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/aalvarezto/scaffold--parcel-react.git"
+	},
+	"author": "Andres Alvarez <ndralvz@gmail.com>",
+	"license": "MIT",
+	"description": "DRY utility for parcel",
+	"bugs": {
+		"url": "https://github.com/aalvarezto/scaffold--parcel-react/issues"
+	},
+	"homepage": "https://github.com/aalvarezto/scaffold--parcel-react#readme",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prettierfile": "echo {\"arrowParens\":\"avoid\",\"printWidth\":60,\"tabWidth\":4,\"useTabs\":true,\"semi\":false} > .prettierrc"
+	},
+	"keywords": [],
+	"devDependencies": {
+		"prettier": "^2.1.2"
+	}
 }
